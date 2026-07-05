@@ -1,0 +1,6 @@
+@DoMS.API_HostAddress = http://localhost:5139
+
+GET {{DoMS.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

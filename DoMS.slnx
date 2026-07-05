@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="DoMS.API/DoMS.API.csproj" />
+  <Project Path="DoMS.Modules.AI/DoMS.Modules.AI.csproj" />
+  <Project Path="DoMS.Modules.Identity/DoMS.Modules.Identity.csproj" />
+  <Project Path="DoMS.Modules.Learning/DoMS.Modules.Learning.csproj" />
+  <Project Path="DoMS.Shared/DoMS.Shared.csproj" />
+</Solution>

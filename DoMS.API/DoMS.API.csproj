@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <NoWarn>$(NoWarn);NU1903;NU1603</NoWarn>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.OpenApi" Version="2.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.9" />
+    <PackageReference Include="Scalar.AspNetCore" Version="2.16.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DoMS.Modules.AI\DoMS.Modules.AI.csproj" />
+    <ProjectReference Include="..\DoMS.Modules.Identity\DoMS.Modules.Identity.csproj" />
+    <ProjectReference Include="..\DoMS.Modules.Learning\DoMS.Modules.Learning.csproj" />
+  </ItemGroup>
+
+</Project>
