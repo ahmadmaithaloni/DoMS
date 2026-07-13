@@ -3,9 +3,9 @@ namespace DoMS.Shared;
 
 public class BasicAuditLog
 {
-    public Guid AuditID { get; set; }
-    public DateTime CreatedAt { get; set; }
-    public string UserID { get; set; } = string.Empty;
-    public string AuditDescription { get; set; } = string.Empty;
-    public string? LogNotes { get; set; }
+    public Guid AuditID { get; init; }
+    public DateTime CreatedAt { get; init; }
+    public string UserID { get; init; } = string.Empty;
+    public string AuditDescription { get; init; } = string.Empty;
+    public string? LogNotes { get; init; }
 }

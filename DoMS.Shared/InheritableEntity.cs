@@ -3,8 +3,8 @@ namespace DoMS.Shared;
 
 public class InheritableEntity
 {
-    public DateTime CreatedAt { get; set; }
-    public string CreadtedBy { get; set; } = string.Empty;
-    public DateTime? UpdatedAt { get; set; }
-    public string? UpdatedBy { get; set; }
+    public DateTime CreatedAt { get; init; }
+    public string CreadtedBy { get; init; } = string.Empty;
+    public DateTime? UpdatedAt { get; init; }
+    public string? UpdatedBy { get; init; }
 }
