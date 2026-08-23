@@ -1,5 +1,4 @@
 using DoMS.Modules.Learning.Domain.Entities;
-using DoMS.Modules.Learning.Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace DoMS.Modules.Learning.Infrastructure.Data;

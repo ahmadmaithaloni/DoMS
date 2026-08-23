@@ -1,5 +1,4 @@
 using System.Collections;
-using DoMS.Modules.Learning.Domain.Models;
 namespace DoMS.Modules.Learning.Domain.Entities;
 
 public class Course : DoMS.Shared.InheritableEntity

@@ -1,4 +1,4 @@
-using DoMS.Modules.Learning.Domain.Models;
+using DoMS.Modules.Learning.Domain.Exceptions.AssignmentExceptions;
 
 namespace DoMS.Modules.Learning.Domain.Entities;
 
@@ -17,6 +17,10 @@ public class Learner : DoMS.Shared.InheritableEntity
     public void AddCourseAssignment(CourseAssignment assignment)
     {
         ArgumentNullException.ThrowIfNull(assignment);
+        if (_courseAssignments.Any(p => p.CourseID == assignment.CourseID))
+        {
+            throw new DuplicatedAssignmentException(assignment.LearnerID, assignment.CourseID);
+        }
         _courseAssignments.Add(assignment);
     }
 }

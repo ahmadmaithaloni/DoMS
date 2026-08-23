@@ -7,4 +7,5 @@ public class InheritableEntity
     public string CreadtedBy { get; init; } = string.Empty;
     public DateTime? UpdatedAt { get; init; }
     public string? UpdatedBy { get; init; }
+    public bool IsActive { get; set; } = false;
 }

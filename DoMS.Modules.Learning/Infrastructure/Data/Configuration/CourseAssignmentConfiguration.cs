@@ -1,5 +1,4 @@
 using DoMS.Shared.Data.Configuration;
-using DoMS.Modules.Learning.Domain.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using DoMS.Modules.Learning.Domain.Entities;

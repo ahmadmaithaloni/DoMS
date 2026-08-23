@@ -1,6 +1,6 @@
 using DoMS.Modules.Learning.Domain.Entities;
 
-namespace DoMS.Modules.Learning.Domain.Models;
+namespace DoMS.Modules.Learning.Domain.Entities;
 
 public class CourseAssignment : DoMS.Shared.InheritableEntity
 {
@@ -11,10 +11,10 @@ public class CourseAssignment : DoMS.Shared.InheritableEntity
     // navigation properties
     public virtual Learner Learner { get; set; } = null!;
     public virtual Course Course { get; set; } = null!;
-    private CourseAssignment()
+    public CourseAssignment()
     {
     }
-    public CourseAssignment(Guid CourseID, Guid LearnerID, string Notes)
+    public CourseAssignment(Guid LearnerID, Guid CourseID, string Notes)
     {
         this.CourseID = CourseID;
         this.LearnerID = LearnerID;
